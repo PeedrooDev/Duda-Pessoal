@@ -13,14 +13,27 @@
         <div class="container">
             <header>
                 <div class="logo">MariaMasso</div>
-               <div class="nav-desktop">
-                  <ul>
-                   <li><a href="#">Home</a></li>
-                    <li><a href="#">Profissionais</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#"><span>Contate-me</span></a></li>
-                </ul>
-            </div><!--nav-desktop-->
+              
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="#sobre">quem sou</a></li>
+                        <li><a href="#depoimentos">depoimentos</a></li>
+                        <li><a href="#videos">vídeos</a></li>
+                        <li><a href="#contato">contato</a></li>
+                    </ul>
+                </nav>
+        
+                <div class="clear"></div>   
+                <nav class="menu-mobile">
+                    <ul>
+                        <li><a href="#sobre">quem sou</a></li>
+                        <li><a href="#depoimentos">depoimentos</a></li>
+                        <li><a href="#videos">vídeos</a></li>
+                        <li><a href="#contato">contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="clear"></div>
         </header><!--header-->
             
 
@@ -70,34 +83,78 @@
 
     <div class="clear"></div>
 
+
+    <!--fedbkacs-->
     <section class="fedbacks">
         <div class="container">
-           
+
             <div class="text">
 
                 <div class="titulo">
             <h1>O que nossas paciente dizem..</h1><!--titulo principal-->
         </div><!--titulo-->
 
-            <p><span>"</span> ipsum dolor sit amet, consectetur adipiscing elit.<br> 
-                Fusce rutrum magna sit amet tincidunt laoreet. Proin 
-               <br> nec egestas odio. Aenean in arcu ipsum.<span>"</span></p>
-        <div class="foto_pessoa_name"><!--foto-->
-            <div class="circle"></div>
-            <h3>Joana <span>Alves</span></h3>
-        </div>
+           
+ 
+<div class="part2">
+	<div class="scrollEquipe">
+	<div class="scroll-wraper">
+	
+        <div class="sobre-autor">
+		<div class="titulo-autor">
+			<div class="wraper-titulo-autor">
+				<h2>Maria Eduarda</h2>
+		
+			</div><!--wraper-titulo-autor-->
+			<div class="img-autor"></div>
+		</div><!--titulo-autor-->
+		<div class="texto-autor">
+		<p>Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien.
+		Ut tempus pulvinar ante, at euismod orci.</p>
+		</div><!--texto-autor-->
+	</div><!--sobre-autor-->
+	
+    <div class="sobre-autor">
+		<div class="titulo-autor">
+			<div class="wraper-titulo-autor">
+				<h2>Vanessa Alves</h2>
+				
+			</div><!--wraper-titulo-autor-->
+			<div class="img-autor"></div>
+		</div><!--titulo-autor-->
+		<div class="texto-autor">
+		<p>Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien.
+		Ut tempus pulvinar ante, at euismod orci.</p>
+		</div><!--texto-autor-->
+	</div><!--sobre-autor-->
 
-        <div class="bullets">
-            <div class="bullet01"></div>
-            <div class="bullet01"></div>
-            <div class="bullet01"></div>
-        </div>
-    </div><!--text--> 
-        <div class="clear"></div>
+	<div class="sobre-autor">
+		<div class="titulo-autor">
+			<div class="wraper-titulo-autor">
+				<h2>Manuela Campos</h2>
+				
+			</div><!--wraper-titulo-autor-->
+			<div class="img-autor"></div>
+		</div><!--titulo-autor-->
+		<div class="texto-autor">
+		<p>Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien.
+		Ut tempus pulvinar ante, at euismod orci.</p>
+		</div><!--texto-autor-->
+	</div><!--sobre-autor-->
+	</div><!--scroll-wraper-->
+	</div><!--scrollEquipe-->
+	<div class="slider-bullets">
+		
+	</div><!--slider-bullets-->
+</div><!--part2-->
+<div class="clear"></div>
         </div><!--container-->
     </section>
 
+    <div class="clear"></div>
 
+
+<div class="icone-seta"></div>
     <section class="sobre">
         <div class="container">
 
@@ -221,26 +278,41 @@
     </section>
     
 
-    <section class="fomr">
+    <section class="contate">
         <div class="container">
-            <div class="form">
-             
-                <div class="w50">
-                <input type="text" name="email" placeholder="Email">
-                <input type="text" name="name" placeholder="nome">
-            </div> <!--w50-->
-              
-            <div class="w100">
-                <input type="text" name="name" placeholder="nome">
-        <textarea type="text" name="text" id="" cols="30" rows="10" placeholder="comentario"></textarea>
-    </div><!--w100-->
 
-        
-        <input type="button" value="Quero mudar de corpo">
-        <div class="clear"></div>
-        </div>
+                <!--colocar 
+                    titulo-->
+
+
+<form action="https://api.staticforms.xyz/submit" method="post">
+      <input type="hidden" name="accessKey" value= "8f782979-c2ef-4daf-b1a8-ca2f09d45b56"> 
+      <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obg.html">
+      <!--api para o fomr chegar no meu email-->
+                
+
+      <!--form-->
+    <input required type="text" name="name" placeholder="Nome" >        
+    <input  required type="text" name="te" placeholder="Telefone" >    
+    <textarea type="text" name="text" id="" cols="30" rows="10"
+     placeholder="comentario"></textarea><!--texto para comentario-->
+               
+   <input type="submit" value="Evniar" /> <!--button-->
+</form><!--formulario-->
+            
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234718.83706412863!2d-46.027826868249335!3d-23.189104825906846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bb3858cc2e7%3A0xba25a33168f8c1!2zU8OjbyBKb3PDqSBkb3MgQ2FtcG9zLCBTUA!5e0!3m2!1spt-BR!2sbr!4v1726340005549!5m2!1spt-BR!2sbr" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div><!--map-->
+             
+            <div class="celar"></div>
         </div><!--container  -->
     </section><!--form-->
 
+
+ 
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="JS/slider.js"></script>
+    <script src="JS/menu_responsivo.js"></script>
 </body>
 </html>
