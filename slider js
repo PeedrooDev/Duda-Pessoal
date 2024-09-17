@@ -1,6 +1,6 @@
 $(function(){
 
-	var delay = 3000;
+	var delay = 5000;
 	var curIndex = 0;
 	var amt;
 
