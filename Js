@@ -1,8 +1,15 @@
 /*Menu Mobile*/
+$(document).ready(function() {
+    // Quando o menu é clicado, alterna a visibilidade do <ul> dentro dele
+    $('.menu-mobile').click(function(event){
+        event.stopPropagation(); // Impede que o clique no menu feche o menu
+        $('.menu-mobile').find('ul').slideToggle();
+    });
 
-$(function(){
-
-	$('.menu-mobile').click(function(){
-		$('.menu-mobile').find('ul').slideToggle();
-	})
-})
+    // Quando qualquer outro lugar na página é clicado, fecha o menu se estiver aberto
+    $(document).click(function(event) {
+        if ($('.menu-mobile').find('ul').is(':visible')) {
+            $('.menu-mobile').find('ul').slideUp();
+        }
+    });
+});
