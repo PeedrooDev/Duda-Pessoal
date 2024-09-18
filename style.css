@@ -333,6 +333,14 @@ header ul a{
     background: #581736;
 }
 
+.ela{
+    background: #fcf5e5;
+    width: 40%;
+    height: 400px;
+    float: left;
+    margin:50px;
+}
+
 .container_sobre .text_sobre{
     padding-top:40px;
     float: right;
@@ -405,7 +413,7 @@ form{
     display: inline-block;
     width: 600px;
     line-height: 3.6;
-    float: left;
+ 
     padding-top: 90px;
     padding-left: 53px;
     font-family: "Montserrat", sans-serif;
@@ -458,7 +466,7 @@ form input[type="submit"] {
 }
 
 
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 1200px)  {
 	nav.menu-desktop{
 		display: none;
 	}
@@ -474,9 +482,27 @@ form input[type="submit"] {
     display: flex;
      width: 90%;
     height: 200px;
+    }
+}
+
+@media screen and (max-width: 800px){
+   
+.part2{ padding: 10px 3%;
 }
 
 
+.titulo-autor h2 {
 
- }
+    text-align: center;
+   
+}
 
+}
+
+@media screen and (max-width: 650px)  {
+    .text_chamada  h1{
+        padding-top: 9%;
+       font-size: 65px;
+    }
+
+}
