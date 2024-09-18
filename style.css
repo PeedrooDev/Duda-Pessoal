@@ -2,20 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*RESERT PAGE*/
 
-*{padding: 0;  margin: 0; box-sizing: border-box;}
 
-html,body{ width: 100%; }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+html,body{
+        width: 100%;
+        background:  #fcf5e5;
+}
+
+/**/
 .container{margin: 0; padding: 30px 2%;}
 
 .clear{ clear: both;}
 
 /**/
 
-/*section 01 (DIMENSOES)*/
-
+/*section 01 (tela inicial)*/
 section.section01{
     height: 800px;
     max-width: 1400px;
@@ -41,15 +48,15 @@ section  .logo{
 
 
 /*header desktop*/
-
 nav.menu-mobile{
-	 color: #501435;
+    color: #501435;
 	width: 28px;
 	height: 28px;
-        float: right;
+    float: right;
+    margin-left: auto;
 	margin-top:7px;
 	cursor: pointer;
-	background-image: url('../IMG/menu-mobile.png');
+	background-image: url('../IMG/menu-mobile.png');/*mudar o icone para cor correta*/
 	background-size:100% 100%;
 	display: none;
 }
@@ -61,8 +68,8 @@ nav.menu-mobile ul{
 	width: 100%;
 	position: absolute;
 	left: 0;
-	top: 60px;
-	background-color: white;
+	top: 90px;
+	background-color: #fcf5e5;
 }
 
 nav.menu-mobile ul li{
@@ -70,9 +77,14 @@ nav.menu-mobile ul li{
 	text-transform: uppercase;
 }
 
-nav.menu-mobile ul li{ padding:10px 0;}
+nav.menu-mobile ul li{
+	padding:10px 0;
+}
 
-header nav.menu-desktop{ float: right;}
+header nav.menu-desktop{
+	float: right;
+    margin-left: auto;
+}
 
 header nav.menu-desktop ul{
 	padding:8px 0;
@@ -87,11 +99,12 @@ header nav.menu-desktop ul li{
 }
 
 header ul a{
-	color: #b4b4b4;
+    color: #C6327E;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
 	text-decoration: none;
 }
-
- 
+ /*fim do screan query */
 
 
  /*desktop chamada*/
@@ -106,7 +119,7 @@ header ul a{
 }
 
 .text_chamada p{
-    font-family: "Open Sans", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-top: 8px;
     font-size: 15px;
     color: #8F1A44;
@@ -127,7 +140,7 @@ header ul a{
     text-align: center;
     position: absolute;
     font-size: 35px;                                                               
-    font-family: "Open Sans", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
 
 
@@ -138,7 +151,6 @@ header ul a{
 /*tecnicas*/
 .tecnicas{
     max-width:1400px;
- 
 }
 
 .tecnicas .text h1{
@@ -173,6 +185,8 @@ header ul a{
 }
 
 
+/*arrumar*/
+
 /*fim section 02*/
 
 
@@ -185,6 +199,7 @@ header ul a{
 }
 
 
+
 .fedbacks .titulo h1{
     font-family: "Montserrat", sans-serif;
     color: #501435;
@@ -194,7 +209,10 @@ header ul a{
 }
 
 
-.part2{ padding:103px 0px 28px 325px }
+
+.part2{
+	padding:103px 0px 28px 325px
+}
 
 .scrollEquipe{
 	max-width: 600px;
@@ -202,7 +220,9 @@ header ul a{
 	overflow: hidden;
 }
 
-.scroll-wraper{ width: 100%;}
+.scroll-wraper{
+	width: 100%;
+}
 
 .sobre-autor{
 	float: left;
@@ -215,7 +235,9 @@ header ul a{
 	width: 100%;
 }
 
-.wraper-titulo-autor{ float: left;}
+.wraper-titulo-autor{
+	float: left;
+}
 
 .titulo-autor h2{
     font-family: "Montserrat", sans-serif;
@@ -285,8 +307,8 @@ header ul a{
 
 .icone-seta{
 	position: absolute;
-	left: 50%;
-        top: 317%;
+    left: 50%;
+    top: 317%;
 	transform:translateX(-50%);
 	-ms-transform:translateX(-50%);
 	width: 44px;
@@ -305,9 +327,9 @@ header ul a{
 
 .sobre .container_sobre{
     padding: 30px 2%;
-    margin: 60px;
+  margin: 60px;
     width: 90%;
-    height: 1400px;
+    height: 1469px;
     background: #581736;
 }
 
@@ -324,7 +346,7 @@ header ul a{
 }
 
 .sobre .container_sobre p{
-    padding-top: 40px; 
+    padding-top: 20px; 
     color: white;
     font-size: 19px;
     font-family: "Open Sans";
@@ -342,13 +364,15 @@ header ul a{
 }
 
 
+
 .container_fqa1{
     padding: 20px 2%;
    margin-bottom: 23px;
 }
 
 .container_fqa1{
-    padding-bottom: 23px;
+    cursor: pointer;
+    padding-bottom: 13px;
     color: white;
     font-family: "Open Sans";
     margin-left: 50px;
@@ -360,9 +384,17 @@ header ul a{
 .fqa p{
     margin-left: 53px;
     max-width: 1000px;   
-    padding-bottom: 53px;
+    padding-bottom: 25px;
+    
 }
 
+
+.container_fqa1 i{
+    padding-top: 0px;
+    padding-right: 3%;
+    color:wheat;
+    float: right;
+}
 
 /*fim*/
 
@@ -416,7 +448,6 @@ form input[type="submit"] {
 
 /*FIM FORM*/
 
-/*MAPA*/
 .map{
     height: 500px;
     width: 500px;
@@ -427,17 +458,25 @@ form input[type="submit"] {
 }
 
 
-
-/*Screan query  RESPONSIVIDADE*/
-
- @media screen and (max-width: 800px)  {
-
+@media screen and (max-width: 800px)  {
 	nav.menu-desktop{
 		display: none;
 	}
-
 	nav.menu-mobile{
 		display: block;
-        
 	}
+    .container_button{
+    width: 40%;
+    }
+
+    .tecnicas .container_box{
+    margin-top: 12px;
+    display: flex;
+     width: 90%;
+    height: 200px;
+}
+
+
+
  }
+
